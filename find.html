@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Find a Field</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+
+    <style>
+        /* center page title  */
+        .page-title {
+            text-align: center;
+            padding: 0px 24px 16px;
+        }
+
+        .page-title h1 {
+            margin-bottom: 8px;
+            font-size: 2rem;
+        }
+
+        .page-title p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* background color */
+        body {
+            background-color: #67cf88;
+        }
+
+
+        /* field grid */
+        .field-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            padding: 24px;
+        }
+
+        /* only one column on mobile */
+        @media (max-width: 768px) {
+            .field-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* cards: */
+        /* to make entire card clickable */
+        .field-card {
+            display: block;
+            background-color: #a8dbc0;
+            border-radius: 8px;
+            text-decoration: none;
+            /*removes underline from link*/
+            color: inherit;
+            /*prevents blue and pruple link colors  */
+            overflow: hidden;
+            /*prevents image from spilling from card */
+        }
+
+        /* image spans full card and ensures consistent alignment  */
+        .field-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .field-card-text {
+            padding: 16px;
+        }
+
+        .field-card-text h3 {
+            margin-bottom: 8px;
+        }
+
+        .field-card-text p {
+            margin: 4px 0;
+        }
+
+        /* animates card movement to feel smooth*/
+        .field-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .field-card:hover {
+            transform: translateY(-4px); /* card moves up when hovering*/
+            box-shadow: 0 10px 24px #00000026;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.webp" alt="FieldFinder logo"> <!--ai generated logo-->
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find.html">Find a Field</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Browse Fields</h1>
+            <p>Explore public fields and view details</p>
+        </section>
+
+        <!-- field grid -->
+        <section class="field-grid">
+
+            <!-- Entire card is a single link -->
+            <a href="field-mayfield.html" class="field-card">
+                <img src="images/mayfield.jpg" alt="Mayfield Soccer Complex">
+                <div class="field-card-text">
+                    <h3>Mayfield Soccer Complex</h3>
+                    <p>Surface: Grass</p>
+                    <p>Lights: Yes</p>
+                </div>
+            </a>
+
+
+            <a href="field-el-camino.html" class="field-card">
+                <img src="images/el_camino.jpg" alt="El Camino Park">
+                <div class="field-card-text">
+                    <h3>El Camino Park</h3>
+                    <p>Surface: Turf</p>
+                    <p>Lights: Yes</p>
+                </div>
+            </a>
+
+
+            <a href="field-cubberly.html" class="field-card">
+                <img src="images/cubberly.jpeg" alt="Cubberly Turf">
+                <div class="field-card-text">
+                    <h3>Cubberly Turf</h3>
+                    <p>Surface: Turf</p>
+                    <p>Lights: Yes</p>
+                </div>
+            </a>
+
+
+            <a href="field-jls.html" class="field-card">
+                <img src="images/jls.jpg" alt="JLS Middle School Athletic Fields">
+                <div class="field-card-text">
+                    <h3>JLS Middle School Athletic Fields</h3>
+                    <p>Surface: Grass</p>
+                    <p>Lights: No</p>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2026 Field Finder</p>
+        <p>
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="feedback.html">Feedback</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

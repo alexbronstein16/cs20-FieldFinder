@@ -1,0 +1,78 @@
+/* styles for nav and footer and other things that need to be consistent */
+
+body {
+    background-color: #67cf88;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+  }
+  
+  /* Header + Nav */
+
+  
+  /* pushes logo to left and nav to right */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  /* logo scaling (dynamic) */
+  .logo img {
+    height: clamp(60px, 6vw, 120px);
+    width: auto;
+    display: block;
+  }
+  
+  /* navigation layout */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* horizontal instead of vertical */
+  nav li {
+    display: inline;
+    margin-right: 16px;
+  }
+  
+  /* link effects  */
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+
+ /* FOOTER */
+  
+     footer {
+        margin-top: 24px;
+        padding: 24px;
+        text-align: center;
+        font-size: 1rem;
+      }
+      /* horizontal and centered links */
+      footer nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 12px 0;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+      }
+      
+      footer a {
+        text-decoration: none;
+        color: #000;
+      }
+      
+      footer a:hover {
+        text-decoration: underline;
+      }
+      
